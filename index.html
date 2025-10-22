@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Brayan — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <canvas id="matrix" aria-hidden="true"></canvas><div class="backdrop-vignette" aria-hidden="true"></div>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Go to home"><span id="brand-gizmo" aria-hidden="true"></span>Brayan</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Main"><ol>
+      <li><a href="#home"><span class="num">01.</span> Home</a></li>
+      <li><a href="#about"><span class="num">02.</span> About</a></li>
+      <li><a href="#work"><span class="num">03.</span> Projects</a></li>
+      <li><a href="#contact"><span class="num">04.</span> Contact</a></li>
+    </ol></nav>
+  </header>
+  <nav class="side-nav" id="side-nav" aria-label="Section navigation">
+    <a class="side-item" href="#home" aria-label="Home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tip">Home</span></a>
+    <a class="side-item" href="#about" aria-label="About"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm7 8a7 7 0 0 0-14 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tip">About</span></a>
+    <a class="side-item" href="#work" aria-label="Projects"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm5-4h8l2 4H6l2-4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tip">Projects</span></a>
+    <a class="side-item" href="#contact" aria-label="Contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 5l8 7 8-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="tip">Contact</span></a>
+    <div class="side-progress" id="side-progress" aria-hidden="true"></div>
+  </nav>
+  <main id="home">
+    <section class="hero" id="home-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Hi, my name is</p>
+        <h1 class="display">Brayan<span class="blink">.</span></h1>
+        <h2 class="tagline">Roblox programmer & web/software engineer.</h2>
+        <p class="lead">I’m a <strong>19-year-old</strong> developer with <strong>4 years of experience</strong>. I build complete Roblox gameplay systems—combat frameworks, vehicles, roleplay mechanics, progression, AI/NPC, UI/HUD, data, and performant netcode. I also design and code modern websites and apps end-to-end. This site you’re on was built by me in just <strong>3 days</strong>.</p>
+        <a class="cta" href="#contact">Get In Touch</a>
+      </div>
+      <aside class="hero-visual" aria-hidden="true"><canvas id="geo-orb" width="520" height="520"></canvas></aside>
+    </section>
+    <section id="about" class="section section--about">
+      <div class="about-header"><h3 class="section-title"><span class="num">02.</span> About Me</h3><div class="title-rule anim-line" aria-hidden="true"></div></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I’m Brayan, a Roblox scripter and software engineer focused on web development. On Roblox, I design gameplay and systems that feel great and scale well. On the web, I build fast, accessible sites and apps—this website you’re using was designed and coded entirely by me.</p>
+          <p>My web work centers on high-quality portfolios and marketing sites, handling both front end and back end when needed. I ship clean UI, smooth interactions, responsive layouts, authentication, and data flows. In Roblox, I prioritize performance, clear architecture, reliable networking, and solid data pipelines so features are maintainable and fun.</p>
+          <div class="views-badge" aria-live="polite"><svg class="eye" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5c5.5 0 9.6 4.3 10.7 6.1.2.4.2.9 0 1.3C21.6 14.3 17.5 18.6 12 18.6S2.4 14.3 1.3 12.4c-.2-.4-.2-.9 0-1.3C2.4 9.3 6.5 5 12 5zm0 3.2a4.2 4.2 0 1 0 0 8.4 4.2 4.2 0 0 0 0-8.4z" fill="currentColor"/></svg><span id="views-count">0</span></div>
+          <p>What I work with:</p>
+          <ul class="tech-grid">
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2l9 5-9 5-9-5 9-5z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>Lua (Luau)</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>Roblox Studio</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h16M4 16h16M8 4v16M16 4v16" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>RemoteEvents/Functions</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M6 10h12M8 14h8M10 18h4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>DataStore/MemoryStore</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>HTML, CSS, JavaScript</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 16 0" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>React</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h18M12 3v18" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>Node.js/Express</li>
+            <li><span class="tech-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 8l6-3 6 3v8l-6 3-6-3z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>Firebase/Supabase</li>
+          </ul>
+        </div>
+        <div class="about-photo"><figure class="avatar"><img src="Profile.jpg" alt="Profile"/></figure></div>
+      </div>
+    </section>
+    <section id="work" class="section section--work">
+      <h3 class="section-title-inline"><span class="num">03.</span> Projects</h3><div class="inline-rule anim-line" aria-hidden="true"></div>
+      <div class="project-tabs" role="tablist" aria-label="Project categories"><button class="tab active" role="tab" id="tab-roblox" aria-selected="true" aria-controls="projects-panel" data-filter="roblox">Roblox</button><button class="tab" role="tab" id="tab-web" aria-selected="false" aria-controls="projects-panel" data-filter="web">Web Development</button></div>
+      <div class="project-summary" aria-live="polite">
+        <div class="summary-item"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5 9-5zM3 12l9 5 9-5M3 17l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><p class="summary-label">Price (full system)</p><p id="summary-price-full" class="summary-value">$80–$500 USD</p></div></div>
+        <div class="summary-item"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 1 0-5.7 5.7L2.7 18.3l3 3 6.3-6.3a4 4 0 0 0 2.7-8.7z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><p class="summary-label">Price (small system)</p><p id="summary-price-mini" class="summary-value">$25–$80 USD</p></div></div>
+        <div class="summary-item"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 7v5l4 2M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><p class="summary-label">Estimated time</p><p id="summary-time" class="summary-value">1–3 days (small) · 7–30 days (full)</p></div></div>
+      </div>
+      <div id="projects-panel" class="projects-grid" role="tabpanel" aria-labelledby="tab-roblox">
+        <article class="project-card" data-category="roblox"><div class="yt"><video src="videos/inventory.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Inventory System</h4><p>Modular tools management by sections, used in "Resting Place" (30m visits hangout).</p></div></article>
+        <article class="project-card" data-category="roblox"><div class="yt"><video src="videos/TrollUI.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Troll UI</h4><p>Spectator troll menu with currency/Robux integration.</p></div></article>
+        <article class="project-card" data-category="roblox"><div class="yt"><video src="videos/Vehicles.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Vehicles</h4><p>Customizable retro style mini drifters Vehicles.</p></div></article>
+        <article class="project-card" data-category="roblox"><div class="yt"><video src="videos/AI.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Advance AI Detection</h4><p>Modular detection of the palyer like a 3 AAA game scanning for each part of the player body in the range.</p></div></article>
+        <article class="project-card" data-category="roblox"><div class="yt"><video src="videos/Chess.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Chess Minigame</h4><p>A complete chess system that support friends AI, Player vs Player and has all mechanics of chess covered like piece rules castling, stalemate, pawn promotion ect.</p></div></article>
+        <article class="project-card" data-category="web" hidden><div class="yt"><video src="videos/web-portfolio.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Personal Portfolio</h4><p>Canvas FX, accessibility and performance.</p></div></article>
+        <article class="project-card" data-category="web" hidden><div class="yt"><video src="videos/web-landing.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Landing Page</h4><p>Conversion-optimized marketing landing.</p></div></article>
+        <article class="project-card" data-category="web" hidden><div class="yt"><video src="videos/web-dashboard.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>Admin Dashboard</h4><p>Modular panel with charts and auth.</p></div></article>
+        <article class="project-card" data-category="web" hidden><div class="yt"><video src="videos/web-ecommerce.mp4" controls preload="metadata"></video></div><div class="project-meta"><h4>E-commerce Lite</h4><p>Catalog, cart, and basic checkout.</p></div></article>
+      </div>
+    </section>
+    <section id="contact" class="contact-icons">
+      <a class="circle" href="https://discord.com/users/1063304041419001966" target="_blank" rel="noopener" aria-label="Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6c2-1 4-1 5-1s3 0 5 1c1 2 2 4 2 7-2 2-4 3-7 3s-5-1-7-3c0-3 1-5 2-7zM9.5 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm5 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"/></svg></a>
+      <a class="circle" href="Itsbrayanrodriguez@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM4 5l8 7 8-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </section>
+  </main>
+  <footer class="site-footer"><small>© <span id="year"></span> Brayan — Built with HTML, CSS, JS, coffee, and neon green.</small></footer>
+  <a class="rail-left" href="https://discord.com/users/1063304041419001966" target="_blank" rel="noopener" aria-label="Discord"><span class="rail-icon">🟢</span><span class="rail-line"></span></a>
+  <div class="rail-right" aria-hidden="true"><span class="rail-text">Contact Me</span><span class="rail-line"></span></div>
+  <script src="script.js"></script>
+</body>
+</html>
